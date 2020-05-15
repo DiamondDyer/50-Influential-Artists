@@ -1,43 +1,87 @@
 .title-container{
     .center();
     text-align: center;
-    border-bottom: 1px solid grey;
+   
     
    
     
 
     img{
-        width:100%;
         padding:2%;
-        width: 40%
+        padding-top: 0;
+        width: 40%;
         
+        @media @mobile{
+            width:100%;
+            padding:0;
+
+        }
     }
 
     h1{
         position: absolute;
-        top: 40%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-family:@main-font;
         font-size: 3rem;
         color: white;
 
+        @media @mobile{
+            top: 20%;
+            font-size:2.5rem;
+        }
+
 
     }
 
     button{
        .btn();
+       @media @mobile{
+           .btn(@top:30%, @font-size:1rem)
+       }
+
 
     }
+}
+
+.lineParent{
+    .center();
+    .line{
+        width:50%;
+        border-bottom: 2px solid grey ;
+        @media @mobile{
+            padding:1%;
+            width:100%;
+        }
+    }
+    
 }
 
 .artists-container{
 display: flex;
 .center();
 
+@media @mobile{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
  .artist{
      width:20%;
      padding:2%;
+
+     @media @mobile{
+         width:100%;
+         
+         
+         
+         
+         
+         
+     }
      
      .vImage{
         .center();
@@ -45,6 +89,11 @@ display: flex;
          img{
              width:60%;
              .imageBorder();
+             padding:2%;
+
+             @media @mobile{
+                 width: 45%;
+             }
              
          }
 
@@ -56,6 +105,11 @@ display: flex;
          img{
              width:64.5%;
              .imageBorder();
+             padding:2%;
+
+             @media @mobile{
+                 width:48%;
+             }
              
          }
 
@@ -64,6 +118,11 @@ display: flex;
      .titleLink{
          width:100%;
          .center();
+         padding:1%;
+
+         @media @mobile{
+             padding-bottom: 2%;
+         }
      }
 
      a{
@@ -80,6 +139,13 @@ display: flex;
          font-family: @main-font;
          font-size: .8rem;
          color:@font-color;
+         
+         @media @mobile{
+             width:60%;
+             font-size:.7rem ;
+             margin:auto;
+
+         }
      }
 
  }//This closes artist//

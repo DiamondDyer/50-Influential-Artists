@@ -11,9 +11,9 @@
 
 //parametric mixin//
 
-.btn(@backround-color:white, @padding:.75rem 1.5rem, @color:black){
+.btn(@backround-color:white, @padding:.75rem 1.5rem, @color:black, @top:45%, @font-size:1.2rem){
     position: absolute;
-    top: 50%;
+    top: @top;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -21,13 +21,13 @@
     padding: @padding;
     border: none;
     cursor: pointer;
-    border-radius: 0.3125rem;
+    border-radius: 2px;
     box-shadow: 4px 4px 8px black;
 
     a{
         text-decoration: none;
         font-family:@main-font;
-        font-size: 1.2rem;
+        font-size: @font-size;
         color:@color;
 
     }
