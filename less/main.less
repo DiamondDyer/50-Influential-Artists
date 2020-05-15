@@ -1,0 +1,87 @@
+.title-container{
+    .center();
+    text-align: center;
+    border-bottom: 1px solid grey;
+    
+   
+    
+
+    img{
+        width:100%;
+        padding:2%;
+        width: 40%
+        
+    }
+
+    h1{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family:@main-font;
+        font-size: 3rem;
+        color: white;
+
+
+    }
+
+    button{
+       .btn();
+
+    }
+}
+
+.artists-container{
+display: flex;
+.center();
+
+ .artist{
+     width:20%;
+     padding:2%;
+     
+     .vImage{
+        .center();
+        
+         img{
+             width:60%;
+             .imageBorder();
+             
+         }
+
+     }//This closes vImage//
+     
+     .jImage{
+        .center();
+
+         img{
+             width:64.5%;
+             .imageBorder();
+             
+         }
+
+     }//This closes jImage//
+
+     .titleLink{
+         width:100%;
+         .center();
+     }
+
+     a{
+         width: 100%;
+         text-align: center;
+         font-family: @main-font;
+         text-decoration: none;
+         color:@font-color;
+
+     }
+
+     .bio{
+         text-align: center;
+         font-family: @main-font;
+         font-size: .8rem;
+         color:@font-color;
+     }
+
+ }//This closes artist//
+
+}//This closes artists container//
